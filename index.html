@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fourteen 💘</title>
+
+  <!-- 🌸 Aesthetic Romantic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🎶 BACKGROUND MUSIC -->
+<audio autoplay loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 💖 HOME -->
+<section id="home" class="section active home">
+  <h1>💌 Valentine Week 💌</h1>
+  <p>Tap a day 💕 Read a feeling ✨</p>
+
+  <div class="days">
+    <button onclick="openDay('rose')">🌹 Rose Day</button>
+    <button onclick="openDay('propose')">💍 Propose Day</button>
+    <button onclick="openDay('chocolate')">🍫 Chocolate Day</button>
+    <button onclick="openDay('teddy')">🧸 Teddy Day</button>
+    <button onclick="openDay('promise')">🤞 Promise Day</button>
+    <button onclick="openDay('hug')">🤗 Hug Day</button>
+    <button onclick="openDay('kiss')">💋 Kiss Day</button>
+    <button onclick="openDay('valentine')">❤️ Valentine Day</button>
+  </div>
+</section>
+
+<!-- 🌹 ROSE DAY -->
+<section id="rose" class="section rose">
+  <div class="card">
+    <h1>🌹 Happy Rose Day 🌹</h1>
+    <p>
+      Meri zindagi mein gulab ki pankhudiyon ki tarah aane ke liye thank you ✨
+      Khushbudar aur khoobsurat ho tum 💖
+      Happy Rose Day, babe 🌹🥰
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- 💍 PROPOSE DAY -->
+<section id="propose" class="section propose">
+  <div class="card">
+    <h1>💍 Propose Day 💍</h1>
+    <p>
+      Jab tak saansein hai tab Tak Mera saath doge?
+      Bas mere rahoge? Pinky promise karoo 🤞💖<br>
+      I just need you ❤️<br>
+      Will you stay with me, always? 💞
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- 🍫 CHOCOLATE DAY -->
+<section id="chocolate" class="section chocolate">
+  <div class="card">
+    <h1>🍫 Chocolate Day 🍫</h1>
+    <p>
+      Life is sweet 🍬<br>
+      But somehow, you make it sweeter 😘<br>
+      Like chocolate I never want to finish 💕
+      Mere Rasmalai
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- 🧸 TEDDY DAY -->
+<section id="teddy" class="section teddy">
+  <div class="card">
+    <h1>🧸 Teddy Day 🧸</h1>
+    <p>
+      If I could 💭<br>
+      I’d wrap myself around you 🤍<br>
+      And stay there forever 🫂
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- 🤞 PROMISE DAY -->
+<section id="promise" class="section promise">
+  <div class="card">
+    <h1>🤞 Promise Day 🤞</h1>
+    <p>
+      I promise to choose you 💖<br>
+      On good days and bad days 🌦️<br>
+      Always, without doubt 💕
+      Aur hamesa pyar karte rahenge tumhe
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- 🤗 HUG DAY -->
+<section id="hug" class="section hug">
+  <div class="card">
+    <h1>🤗 Hug Day 🤗</h1>
+    <p>
+      This hug has no arms 🤍<br>
+      But it’s full of warmth 🔥<br>
+      And it’s only for you 💞
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- 💋 KISS DAY -->
+<section id="kiss" class="section kiss">
+  <div class="card">
+    <h1>💋 Kiss Day 💋</h1>
+    <p>
+      A kiss is a feeling 💓<br>
+      Words can’t explain 😘<br>
+      So here’s one, just for you 💋
+    </p>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+</section>
+
+<!-- ❤️ VALENTINE DAY -->
+<section id="valentine" class="section valentine">
+  <div class="card">
+    <h1>Happy Valentine’s Day ❤️</h1>
+
+    <p id="question">Will you be my Valentine? 💌</p>
+
+    <div class="buttons" id="choiceButtons">
+      <button class="yes" id="yesBtn">YES 💖</button>
+      <button class="no" id="noBtn">NO 😜</button>
+    </div>
+
+    <!-- After YES -->
+    <div id="accepted" style="display:none; margin-top:20px;">
+      <h2>YES ACCEPTED 💃💖</h2>
+      <p>You just made my heart very, very happy 🥹❤️</p>
+
+      <button onclick="revealSecret()">🎁 Tap for a secret</button>
+
+      <p id="secret" style="display:none; margin-top:20px;">
+        💌 Surprise 💌<br><br>
+        Chalo badhiya kiye ki yes click kiye
+        Nhi tohh No me bhi kuch tha nhi waise
+        Try karlo...
+        I don’t want you just for Valentine’s Day…<br>
+        I want you for random Tuesdays, lazy Sundays,<br>
+        and every ordinary moment in between 🌷<br><br>
+        Pehla pyar aur valentine aap hi hain 
+        Always. ❤️
+      </p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

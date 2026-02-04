@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =======================
+   SECTIONS
+======================= */
+.section {
+  display: none;
+  height: 100vh;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section.active {
+  display: flex;
+}
+
+/* =======================
+   HOME
+======================= */
+.home {
+  background: linear-gradient(135deg, #ffd6e8, #ffe6f2);
+  flex-direction: column;
+}
+
+.home h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+}
+
+.days {
+  margin-top: 20px;
+}
+
+.days button {
+  margin: 8px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 30px;
+  background: #e75480;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =======================
+   CARD
+======================= */
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 450px;
+  animation: fadeIn 1.2s ease;
+}
+
+.card h1,
+.card h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: #e75480;
+  color: white;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+/* YES grows smoothly */
+.yes {
+  transition: transform 0.3s ease;
+}
+
+/* =======================
+   BACKGROUNDS
+======================= */
+.rose {
+  background: url("assets/images/rose.jpg") center/cover no-repeat;
+}
+
+.propose {
+  background: url("assets/images/propose.jpg") center/cover no-repeat;
+}
+
+.chocolate {
+  background: url("assets/images/chocolate.jpg") center/cover no-repeat;
+}
+
+.teddy {
+  background: url("assets/images/teddy.jpg") center/cover no-repeat;
+}
+
+.promise {
+  background: url("assets/images/promise.jpg") center/cover no-repeat;
+}
+
+.hug {
+  background: url("assets/images/hug.jpg") center/cover no-repeat;
+}
+
+.kiss {
+  background: url("assets/images/kiss.jpg") center/cover no-repeat;
+}
+
+.valentine {
+  background: url("assets/images/valentine.jpg") center/cover no-repeat;
+}
+
+/* =======================
+   CONFETTI
+======================= */
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: pink;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* =======================
+   ANIMATIONS
+======================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =======================
+   📱 MOBILE RESPONSIVE
+======================= */
+@media (max-width: 600px) {
+  .card {
+    padding: 25px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+
+  .days button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
