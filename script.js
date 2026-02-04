@@ -85,25 +85,25 @@ function revealSecret() {
 
 
 // DATE LOCK 🔒
-// const unlockDates = {
-//   rose: 7,
-//   propose: 8,
-//   chocolate: 9,
-//   teddy: 10,
-//   promise: 11,
-//   hug: 12,
-//   kiss: 13,
-//   valentine: 14
-// };
+const unlockDates = {
+  rose: 7,
+  propose: 8,
+  chocolate: 9,
+  teddy: 10,
+  promise: 11,
+  hug: 12,
+  kiss: 13,
+  valentine: 14
+};
 
-// const today = new Date().getDate();
+const today = new Date().getDate();
 
-// document.querySelectorAll('[data-day]').forEach(btn => {
-//   const day = btn.dataset.day;
-//   if (today < unlockDates[day]) {
-//     btn.disabled = true;
-//     btn.innerHTML += " 🔒";
-//     btn.style.opacity = "0.5";
-//   }
-// });
+document.querySelectorAll('[data-day]').forEach(btn => {
+  const day = btn.dataset.day;
+  if (today < unlockDates[day]) {
+    btn.disabled = true;
+    btn.innerHTML += " 🔒";
+    btn.style.opacity = "0.5";
+  }
+});
 
